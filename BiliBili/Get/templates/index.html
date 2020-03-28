@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/JS/jquery-3.4.1.min.js"></script>
+<!--    <script src="../static/JS/test.js"></script>-->
+</head>
+<body>
+    <h1>Hello</h1>
+    <form action="/" method="post">
+        {% csrf_token %}
+        <input type="text" name="text" value="">
+        <input type="submit" value="提交">
+
+    </form>
+    <h2>该视频的av号为{{av}}</h2>
+    <img src="{{img}}">
+</body>
+</html>
